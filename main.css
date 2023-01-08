@@ -1,0 +1,54 @@
+html {
+    background-color: beige;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    /*this was the best way I could think to place my game board, 
+    but I couldn't figure out if there was a more dynamic way to do it. I
+    had to look up how to make the coloums and rows all connect without just
+    trying to make a table in the HTML file. But I thought if I made a table it
+    would be more confusing to try and seperate and keep track of each cell as 
+    I structured the gameplay in the JS.*/
+}
+
+.square {
+    height: 100px;
+    border: 3px solid #3185AC;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    /* justify content above aligns text to center horizontally, 
+    but I had to add the align-items to center it vertically as well. */
+    align-items: center;
+
+}
+.restart {
+    line-height: 25px;
+    position: absolute;
+    top: 55%;
+    left: 25%
+}
+
+#turn {
+    font-size: 100px;  
+    color: #3185AC;
+    position: absolute;
+    top: 5%;
+    left:25%
+}
+
+#outcome{
+    font-size: 30px;
+    color: #3185AC;
+}
+
+#clearBoard{
+    font-size: 20px;
+    color: darkgray;
+    border: 1px solid black;
+}
